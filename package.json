@@ -1,7 +1,7 @@
 {
-  "name": "mini-tool",
+  "name": "mini-kit",
   "version": "1.0.1",
-  "description": "the mini tool",
+  "description": "the mini kit",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
