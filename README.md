@@ -9,8 +9,8 @@ the mini kit
 ## Examples
 
 ```js
-var Mini = require("mini-kit/mini");
-var Ding = require("mini-kit/ding");
+var Mini = require("mini-kit").mini;
+var Ding = require("mini-kit").ding;
 
 // init ding
 const ding = new Ding({
@@ -18,12 +18,13 @@ const ding = new Ding({
   DING_ROOT_URL: "https://oapi.dingtalk.com", // domain name
 });
 
+// init mini
 const mini = new Mini({
   KEY: "xxx", // personal Alipay management platform
   TOOLID: "xxx", // personal Alipay management platform
 });
 
-// the first step：minidev auth
+// the first step：minidev auth after you authorize it to preview or upload
 mini.auth();
 
 // the second step：minidev.preview or minidev upload
