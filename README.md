@@ -48,11 +48,34 @@ mini-kit basic method to use
 
 ### Utility methods
 
+- [auth()](#auth)
 - [preview()](#preview)
 - [upload()](#upload)
 - [remoteDebug()](#remoteDebug)
 - [build()](#build)
 - [customSendMsg()](#customSendMsg)
+
+
+
+### auth()
+
+> ```ts
+> auth() => null
+> ```
+
+Initializes minidev's run authorization information.
+
+```js
+const Mini = require("mini-kit").mini;
+
+const MiniOptions = {
+  KEY: "xxx",
+  TOOLID: "xxx",
+};
+const mini = new Mini(MiniOptions);
+
+await mini.auth();
+```
 
 ### preview()
 
