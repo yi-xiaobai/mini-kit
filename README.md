@@ -88,9 +88,7 @@ await mini.auth();
 
 The mini program will be constructed and then pushed to the open platform of Alipay mini program to generate the mini program available for mobile Alipay APP, and the preview two-dimensional code will be displayed in the terminal.
 
-
-
-**使用限制**：**需要完成授权**
+**Restrictions on use**：**Need to complete authorization**
 
 ```js
 const Mini = require("mini-kit").mini;
@@ -110,9 +108,7 @@ const { qrcodeUrl, version } = await mini.preview(
 
 The small program will be built on an open platform. Due to the control and stability requirements of the production environment, this build process may take more time than local development. Please wait.
 
-
-
-**使用限制**：**需要完成授权**
+**Restrictions on use**：**Need to complete authorization**
 
 ```js
 const Mini = require("mini-kit").mini;
@@ -128,9 +124,7 @@ await mini.upload("your appId", "your project path", null);
 
 Build small program and initiate real machine debugging.
 
-
-
-**使用限制**：**需要完成授权**
+**Restrictions on use**：**Need to complete authorization**
 
 ```js
 const Mini = require("mini-kit").mini;
@@ -146,9 +140,7 @@ await mini.remoteDebug("your appId", "your project path", null);
 
 Gets a list of small programs.
 
-
-
-**使用限制**：**需要完成授权**
+**Restrictions on use**：**Need to complete authorization**
 
 ```js
 const Mini = require("mini-kit").mini;
@@ -164,9 +156,7 @@ const List = await mini.getList({ clientType: "xxx" });
 
 Get the latest uploaded version of the applet.
 
-
-
-**使用限制**：**需要完成授权**
+**Restrictions on use**：**Need to complete authorization**
 
 ```js
 const Mini = require("mini-kit").mini;
@@ -184,9 +174,7 @@ const versionString = await mini.getUploadedVersion("your appId", {
 
 Delete specified version.
 
-
-
-**使用限制**：**需要完成授权**
+**Restrictions on use**：**Need to complete authorization**
 
 ```js
 const Mini = require("mini-kit").mini;
@@ -202,9 +190,7 @@ await mini.deleteVersion("your appId", "0.0.0", { clientType: "xxx" });
 
 Sets a version of an applet to the Experience version.
 
-
-
-**使用限制**：**需要完成授权**
+**Restrictions on use**：**Need to complete authorization**
 
 ```js
 const Mini = require("mini-kit").mini;
@@ -222,9 +208,7 @@ const { qrCodeUrl } = await mini.setExperience("your appId", "0.0.0", {
 
 Cancel experience version.
 
-
-
-**使用限制**：**需要完成授权**
+**Restrictions on use**：**Need to complete authorization**
 
 ```js
 const Mini = require("mini-kit").mini;
