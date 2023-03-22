@@ -151,7 +151,7 @@ const List = await mini.getList({ clientType: "xxx" });
 ### getUploadedVersion()
 
 > ```ts
-> getUploadedVersion(appId: string, params?: Object) => string
+> getUploadedVersion(appId: string, params?: Object) => Promise<string>;
 > ```
 
 Get the latest uploaded version of the applet.
@@ -169,7 +169,7 @@ const versionString = await mini.getUploadedVersion("your appId", {
 ### deleteVersion()
 
 > ```ts
-> deleteVersion(appId: string, version: string, params?: Object)
+> deleteVersion(appId: string, version: string, params?: Object) ==> Promise<void>;
 > ```
 
 Delete specified version.
@@ -185,7 +185,7 @@ await mini.deleteVersion("your appId", "0.0.0", { clientType: "xxx" });
 ### setExperience()
 
 > ```ts
-> setExperience(appId: string, version: string, params?: Object) => Array<{}>
+> setExperience(appId: string, version: string, params?: Object) => <{qrCodeUrl: string}>
 > ```
 
 Sets a version of an applet to the Experience version.
@@ -203,7 +203,7 @@ const { qrCodeUrl } = await mini.setExperience("your appId", "0.0.0", {
 ### cancelExperience()
 
 > ```ts
-> cancelExperience(appId: string, version: string, params?: Object) => Array<{}>
+> cancelExperience(appId: string, version: string, params?: Object) => Promise<void>
 > ```
 
 Cancel experience version.
@@ -233,7 +233,7 @@ await Mini.build("your project path", null);
 ### customSendMsg()
 
 > ```ts
-> customSendMsg(access_token: string, params?: Object) => Object
+> customSendMsg(access_token: string, params?: Object) => void
 > ```
 
 Small program source code build small program, generating small program runtime product package.
