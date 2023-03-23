@@ -1,9 +1,11 @@
 const ding = require('./src/core/ding')
 const mini = require('./src/core/mini')
-const canvans = require('./lib/core/canvas')
+const canvas = require('./lib/core/canvas')
+const oss = require('./lib/core/oss')
 
 module.exports = {
     ding: ding,
     mini: mini,
-    canvans: canvans,
+    canvas: canvas,
+    oss: oss,
 };
