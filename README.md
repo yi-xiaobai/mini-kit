@@ -59,6 +59,7 @@ mini-kit basic method to use
 - [cancelExperience()](#cancelExperience)
 - [build()](#build)
 - [customSendMsg()](#customSendMsg)
+- [drag()](#drag)
 
 ### auth()
 
@@ -252,4 +253,25 @@ await ding.customSendMsg("your ding access_token", {
   at: {},
   markdown: {},
 });
+```
+
+### drag()
+
+> ```ts
+> drag(qrcodeUrl: string, keyWord: string, width: number, height: number) => Buffer
+> ```
+
+Picture and text.
+
+```js
+const Canvas = require("mini-kit").canvas;
+
+const canvas = new Canvas();
+
+const res = canvas.drag(
+  "your picture",
+  "need add text",
+  "canvas width",
+  "canvas height"
+);
 ```
