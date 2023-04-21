@@ -1,6 +1,6 @@
 {
   "name": "mini-kit",
-  "version": "1.1.9",
+  "version": "1.1.10",
   "description": "the mini kit",
   "main": "index.js",
   "scripts": {
