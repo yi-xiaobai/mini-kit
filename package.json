@@ -16,7 +16,7 @@
     "canvas": "^2.8.0",
     "crypto-js": "^4.1.1",
     "form-data": "^4.0.0",
-    "minidev": "^1.7.0",
+    "minidev": "^1.8.7",
     "moment": "^2.29.4"
   },
   "repository": {
